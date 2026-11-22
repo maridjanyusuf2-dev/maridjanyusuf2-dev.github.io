@@ -51,7 +51,14 @@ function renderLab(lab) {
   tools.hidden = !tools.childElementCount;
 
   setLink(card.querySelector(".writeup"), lab.writeup, `Read write-up for ${lab.title}`);
-  setLink(card.querySelector(".evidence"), lab.evidence, `View evidence for ${lab.title}`);
+  const evidence = card.querySelector(".evidence");
+  if (Object.hasOwn(window.labEvidence || {}, lab.id)) {
+    const title = window.labEvidence[lab.id].images.length ? "View evidence" : "Read lab notes";
+    evidence.textContent = title;
+    setLink(evidence, `lab-evidence.html?lab=${encodeURIComponent(lab.id)}`, `${title} for ${lab.title}`);
+  } else {
+    setLink(evidence, lab.evidence, `View evidence for ${lab.title}`);
+  }
   return card;
 }
 

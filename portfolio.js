@@ -7,12 +7,14 @@ window.portfolio = {
   linkedin: "",
   labs: [
     {
+      id: "rack",
       title: "Cisco rack cabling and link checks",
       category: "Physical Networking",
       summary: "Cabled rack-mounted Cisco routers and switches to lab PCs using Ethernet patch and crossover cables. Identified router and switch ports and checked interface status while troubleshooting connectivity.",
       tools: ["Cisco routers", "Cisco switches", "Ethernet cabling", "Interface status", "Ping", "Traceroute"],
     },
     {
+      id: "ipv6",
       title: "IPv6 addressing and connectivity on Cisco hardware",
       category: "Physical Networking",
       summary: "Used a PuTTY serial console to configure IPv6 on a physical Cisco router, then tested ICMPv6 reachability between Windows lab PCs.",
@@ -21,6 +23,7 @@ window.portfolio = {
       evidence: "ipv6-router-console.jpeg",
     },
     {
+      id: "hardware-static",
       title: "Three-router static routing on Cisco hardware",
       category: "Physical Networking",
       summary: "Troubleshot a lab topology with three physical Cisco routers, routed transit links, VLAN gateways, and Windows PCs. Compared IOS routing tables with end-host ping results.",
@@ -29,6 +32,7 @@ window.portfolio = {
       evidence: "physical-static-routing-console.jpeg",
     },
     {
+      id: "windows-hardening",
       title: "Windows security hardening and auditing",
       category: "Endpoint Security",
       summary: "Hardened a Windows virtual machine using local security policy, Group Policy, and Microsoft Defender. Tested account and file auditing and reviewed service and firmware settings.",
@@ -36,6 +40,7 @@ window.portfolio = {
       tools: ["Windows", "Group Policy", "Event Viewer", "Microsoft Defender", "Secure Boot"],
     },
     {
+      id: "opnsense",
       title: "OPNsense firewall rules and traffic verification",
       category: "Network Security",
       summary: "Set up an OPNsense firewall in VirtualBox, configured its WAN and LAN interfaces, and applied traffic-blocking rules in an isolated lab.",
@@ -43,6 +48,7 @@ window.portfolio = {
       tools: ["OPNsense", "VirtualBox", "Kali Linux", "Nmap", "Wireshark"],
     },
     {
+      id: "packet-tracer-static",
       title: "Static routing between Cisco networks",
       category: "Networking",
       summary: "Configured static routes between Cisco networks in Packet Tracer and investigated early connectivity timeouts, including a subnet-mask mismatch on a router-to-router link.",
@@ -50,6 +56,7 @@ window.portfolio = {
       tools: ["Cisco Packet Tracer", "Cisco IOS", "IPv4 subnetting", "Static routing", "ICMP"],
     },
     {
+      id: "cisco-ssh",
       title: "SSH management on a Cisco 2911 router",
       category: "Network Security",
       summary: "Configured SSH version 2 and local authentication on a Cisco 2911 router in Packet Tracer to support remote administration from a lab PC.",
@@ -58,6 +65,7 @@ window.portfolio = {
       evidence: "packet-tracer-ssh.png",
     },
     {
+      id: "router-on-a-stick",
       title: "Router-on-a-stick inter-VLAN routing",
       category: "Networking",
       summary: "Used a trunk link and router subinterfaces to connect separate VLANs in Cisco Packet Tracer. Investigated forwarding behavior in Simulation mode.",
@@ -65,12 +73,14 @@ window.portfolio = {
       tools: ["Cisco Packet Tracer", "VLANs", "802.1Q", "Router subinterfaces", "ICMP"],
     },
     {
+      id: "vlan-propagation",
       title: "VLAN propagation and trunk troubleshooting",
       category: "Networking",
       summary: "Worked with VLANs across multiple Cisco switches and investigated why VLAN updates appeared on some switches only. Reviewed DTP trunk negotiation, VTP server and client roles, and STP port states.",
       tools: ["Cisco Packet Tracer", "DTP", "VTP", "STP", "VLAN trunking"],
     },
     {
+      id: "spanning-tree",
       title: "Spanning Tree in a redundant switch topology",
       category: "Networking",
       summary: "Built a triangular topology using three Cisco 2960 switches and two PCs to study loop prevention.",
@@ -78,18 +88,21 @@ window.portfolio = {
       tools: ["Cisco Packet Tracer", "Cisco 2960", "STP", "Bridge priority"],
     },
     {
+      id: "svi",
       title: "Layer 3 switch and SVI troubleshooting",
       category: "Networking",
       summary: "Worked through an inter-VLAN routing exercise involving Layer 3 switch interfaces, trunk VLAN membership, and DHCP relay. Traced how each setting affects a host’s path to its gateway.",
       tools: ["Cisco switching", "SVIs", "Inter-VLAN routing", "DHCP relay"],
     },
     {
+      id: "vlsm",
       title: "VLSM subnetting and IPv4 address planning",
       category: "Networking",
       summary: "Created an IPv4 addressing plan for a four-LAN Cisco Packet Tracer topology, assigning subnet sizes and default gateways based on each LAN’s needs.",
       tools: ["Cisco Packet Tracer", "Cisco 2911", "IPv4", "CIDR", "VLSM"],
     },
     {
+      id: "flsm",
       title: "Departmental VLANs and FLSM subnetting",
       category: "Networking",
       summary: "Built a four-department Packet Tracer topology with equal-size IPv4 subnets, access VLANs, switch trunks, and a routing uplink.",
@@ -97,6 +110,7 @@ window.portfolio = {
       tools: ["Cisco Packet Tracer", "FLSM", "VLANs", "802.1Q", "ICMP"],
     },
     {
+      id: "network-services",
       title: "Network services and protocol verification",
       category: "Networking",
       summary: "Configured a Packet Tracer network with DHCP, DNS, web, email, FTP, and SSH services. Used the client applications and Simulation mode to inspect traffic.",
@@ -104,6 +118,7 @@ window.portfolio = {
       tools: ["Cisco Packet Tracer", "DHCP", "DNS", "HTTP", "SMTP", "FTP", "SSH"],
     },
     {
+      id: "ospf",
       title: "Single-area OSPF and DR/BDR failover",
       category: "Networking",
       summary: "Configured OSPFv2 Area 0 on three Cisco 2911 routers in Packet Tracer. Tested designated-router election and failover on a shared Ethernet segment.",
@@ -111,6 +126,7 @@ window.portfolio = {
       tools: ["Cisco Packet Tracer", "Cisco IOS", "OSPFv2", "DR/BDR", "OSPF database"],
     },
     {
+      id: "pki",
       title: "Public-key cryptography and local HTTPS",
       category: "Security",
       summary: "Used OpenSSL on Kali Linux to test RSA encryption and digital signatures. Set up a local certificate authority and issued a certificate for an Apache server on localhost.",

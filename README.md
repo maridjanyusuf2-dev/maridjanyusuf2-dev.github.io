@@ -29,6 +29,8 @@ The entry below is an example. Replace the example details and paths with your o
 
 Use a short, specific result and include your role if the lab was a group project. The date, links, and tools are optional. Test your public links in a signed-out browser before sharing the portfolio.
 
+For a lab page with multiple screenshots, add a unique `id` to its entry in `portfolio.js` and add a matching record in `lab-evidence-data.js`. Each section has a heading and text. Each image has a filename, caption, width, and height. Use files you are comfortable making public and remove credentials and private details before uploading.
+
 ## Publish on GitHub Pages
 
 1. Create a public GitHub repository named `maridjanyusuf2-dev.github.io`. If you already have a site at that address, use a new repository named `lab-portfolio` for a separate project site.

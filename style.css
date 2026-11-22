@@ -79,6 +79,21 @@ h3 { font-size: 1.6rem; letter-spacing: -.025em; }
 .lab:has(.lab-links > [hidden] + [hidden]) { grid-template-columns: 1fr; }
 .footer { min-height: 4rem; padding-block: .85rem; border-top: 1px solid var(--line); }
 
+.evidence-report { padding-block: clamp(2rem, 5vw, 4rem); }
+.report-category { margin: 0 0 .55rem; color: var(--muted); font-weight: 700; }
+.evidence-report h1 { max-width: 23ch; font-size: clamp(2.2rem, 5vw, 4.1rem); letter-spacing: -.055em; }
+.evidence-report h2 { font-size: 1.5rem; letter-spacing: -.025em; }
+.evidence-report p { max-width: 74ch; }
+#report-summary { color: var(--muted); font-size: 1.125rem; }
+#report-notes > section, #report-evidence { margin-block-start: 1.75rem; }
+#report-notes p { margin-block: .55rem 0; }
+.evidence-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1rem; margin-block-start: .9rem; }
+.evidence-grid figure { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: .55rem; background: #fbfdf9; }
+.evidence-grid a { display: grid; place-items: center; min-height: 10rem; height: 14rem; padding: .5rem; background: #eaf0eb; }
+.evidence-grid a:focus-visible { outline-offset: -4px; }
+.evidence-grid img { max-height: 100%; max-width: 100%; min-height: 0; width: auto; height: auto; }
+.evidence-grid figcaption { padding: .75rem; color: var(--muted); }
+
 @media (max-width: 50rem) {
   .hero-inner { grid-template-columns: 1fr 40%; min-height: 21rem; }
   h1 { font-size: clamp(3.25rem, 8.5vw, 5.25rem); }
