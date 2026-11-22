@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hands-on labs with write-ups, tools, and results.">
+  <meta name="theme-color" content="#142721">
+  <title>Lab Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="./index.html"><span class="mark" aria-hidden="true"></span><span id="owner">Lab Portfolio</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#labs">Labs</a>
+        <a id="github" hidden>GitHub</a>
+        <a id="linkedin" hidden>LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="focus" id="focus" hidden></p>
+          <h1 id="title">Lab portfolio<span>.</span></h1>
+          <p id="intro">Hands-on labs with write-ups, tools, and results.</p>
+          <a class="primary" href="#labs">Browse labs</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-outer"></div>
+          <div class="orbit orbit-middle"></div>
+          <div class="orbit orbit-inner"></div>
+          <div class="axis axis-horizontal"></div>
+          <div class="axis axis-vertical"></div>
+          <i class="point point-top"></i><i class="point point-right"></i><i class="point point-bottom"></i>
+          <div class="core"><i></i></div>
+        </div>
+      </div>
+    </section>
+    <section id="labs" class="wrap archive" aria-labelledby="archive-title">
+      <div class="section-head">
+        <h2 id="archive-title">Lab archive</h2>
+        <p id="count" aria-live="polite" hidden></p>
+      </div>
+      <div class="filters" id="filters" hidden>
+        <div class="control">
+          <label for="search">Search labs</label>
+          <input type="search" id="search" placeholder="Search by title, tool, or skill">
+        </div>
+        <div class="control">
+          <label for="category">Category</label>
+          <select id="category"><option value="">All categories</option></select>
+        </div>
+      </div>
+      <p class="empty" id="empty">Lab write-ups will appear here as they’re published.</p>
+      <div id="lab-list"></div>
+      <template id="lab-template">
+        <article class="lab">
+          <div>
+            <div class="lab-meta"><span class="lab-category"></span><time hidden></time></div>
+            <h3></h3>
+            <p class="summary"></p>
+            <p class="outcome" hidden><strong>Result</strong> <span></span></p>
+            <ul class="tools" aria-label="Tools and skills" hidden></ul>
+          </div>
+          <div class="lab-links">
+            <a class="writeup" hidden>Read write-up</a>
+            <a class="evidence" hidden>View evidence</a>
+          </div>
+        </article>
+      </template>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <span id="footer-owner">Lab Portfolio</span>
+    <a href="#main">Back to top</a>
+  </footer>
+</body>
+</html>
